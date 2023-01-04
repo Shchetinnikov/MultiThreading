@@ -12,10 +12,9 @@ set(LES6 ./src/Lesson6.cpp ./include/Lesson6.h)
 set(LES7 ./src/Lesson7.cpp ./include/Lesson7.h)
 set(LES8 ./src/Lesson8.cpp ./include/Lesson8.h)
 set(LES9 ./src/Lesson9.cpp ./include/Lesson9.h)
-SET(MYTIMER ./src/Timer.cpp ./include/Timer.h)
-
+set(MYTIMER ./src/Timer.cpp ./include/Timer.h)
 
 add_executable(${PROJECT_NAME} 
-        app/main.cpp ./include/Lessons.h 
-        LES1 LES2 LES3 LES4 LES5 LES6 LES7 LES8 LES9 
-        MYTIMER)
+        main.cpp ./include/Lessons.h 
+        ${LES1} ${LES2} ${LES3} ${LES4} ${LES5} ${LES6} ${LES7} ${LES8} ${LES9} 
+        ${MYTIMER})
